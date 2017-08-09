@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>图表数据计算</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/图表数据计算/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/图表数据计算/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (组合) -->
+      <div id="u7568" class="ax_default">
+
+        <!-- Unnamed (图片) -->
+        <div id="u7569" class="ax_default image">
+          <img id="u7569_img" class="img " src="images/图表数据计算/u7569.png"/>
+          <!-- Unnamed () -->
+          <div id="u7570" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u7571" class="ax_default image">
+          <img id="u7571_img" class="img " src="images/图表数据计算/u7571.png"/>
+          <!-- Unnamed () -->
+          <div id="u7572" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7573" class="ax_default label">
+        <div id="u7573_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7574" class="text" style="visibility: visible;">
+          <p><span>1、表格内 列与列之间的计算</span></p>
+        </div>
+      </div>
+
+      <!-- 筛选器弹窗 (组合) -->
+      <div id="u7575" class="ax_default" data-label="筛选器弹窗">
+
+        <!-- Unnamed (组合) -->
+        <div id="u7576" class="ax_default">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7577" class="ax_default box_1">
+            <div id="u7577_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7578" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (水平线) -->
+          <div id="u7579" class="ax_default line">
+            <img id="u7579_img" class="img " src="images/图表数据计算/u7579.png"/>
+            <!-- Unnamed () -->
+            <div id="u7580" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u7581" class="ax_default primary_button">
+          <div id="u7581_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u7582" class="text" style="visibility: visible;">
+            <p><span>确定</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u7583" class="ax_default button">
+          <div id="u7583_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u7584" class="text" style="visibility: visible;">
+            <p><span>取消</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (文本段落) -->
+        <div id="u7585" class="ax_default paragraph">
+          <img id="u7585_img" class="img " src="images/图表数据计算/u7585.png"/>
+          <!-- Unnamed () -->
+          <div id="u7586" class="text" style="visibility: visible;">
+            <p><span>表格计算</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u7587" class="ax_default button">
+          <div id="u7587_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u7588" class="text" style="visibility: visible;">
+            <p><span>点此添加</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (连接线) -->
+        <div id="u7589" class="ax_default connector">
+          <img id="u7589_seg0" class="img " src="images/图表数据计算/u7589_seg0.png" alt="u7589_seg0"/>
+          <img id="u7589_seg1" class="img " src="images/图表数据计算/u7589_seg1.png" alt="u7589_seg1"/>
+          <img id="u7589_seg2" class="img " src="images/图表数据计算/u7589_seg2.png" alt="u7589_seg2"/>
+          <img id="u7589_seg3" class="img " src="images/图表数据计算/u7589_seg3.png" alt="u7589_seg3"/>
+          <!-- Unnamed () -->
+          <div id="u7590" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u7591" class="ax_default icon">
+        <img id="u7591_img" class="img " src="images/图表数据计算/u7591.png"/>
+        <!-- Unnamed () -->
+        <div id="u7592" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7593" class="ax_default label">
+        <div id="u7593_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7594" class="text" style="visibility: visible;">
+          <p><span>当前</span><span>没有添加计算列内容</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u7595" class="ax_default">
+
+        <!-- 筛选器弹窗 (组合) -->
+        <div id="u7596" class="ax_default" data-label="筛选器弹窗">
+
+          <!-- Unnamed (组合) -->
+          <div id="u7597" class="ax_default">
+
+            <!-- Unnamed (矩形) -->
+            <div id="u7598" class="ax_default box_1">
+              <div id="u7598_div" class=""></div>
+              <!-- Unnamed () -->
+              <div id="u7599" class="text" style="display: none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (水平线) -->
+            <div id="u7600" class="ax_default line">
+              <img id="u7600_img" class="img " src="images/图表数据计算/u7579.png"/>
+              <!-- Unnamed () -->
+              <div id="u7601" class="text" style="display: none; visibility: hidden">
+                <p><span></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7602" class="ax_default primary_button">
+            <div id="u7602_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7603" class="text" style="visibility: visible;">
+              <p><span>确定</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7604" class="ax_default button">
+            <div id="u7604_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7605" class="text" style="visibility: visible;">
+              <p><span>取消</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (文本段落) -->
+          <div id="u7606" class="ax_default paragraph">
+            <img id="u7606_img" class="img " src="images/图表数据计算/u7585.png"/>
+            <!-- Unnamed () -->
+            <div id="u7607" class="text" style="visibility: visible;">
+              <p><span>表格计算</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u7608" class="ax_default icon">
+          <img id="u7608_img" class="img " src="images/图表数据计算/u7591.png"/>
+          <!-- Unnamed () -->
+          <div id="u7609" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7610" class="ax_default droplist">
+          <select id="u7610_input">
+            <option value="数值1">数值1</option>
+            <option value="数值2">数值2</option>
+            <option value="数值3">数值3</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7611" class="ax_default droplist">
+          <select id="u7611_input">
+            <option selected value="+ 加">+ 加</option>
+            <option value="- 减">- 减</option>
+            <option value="* 乘">* 乘</option>
+            <option value="/ 除">/ 除</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7612" class="ax_default droplist">
+          <select id="u7612_input">
+            <option value="数值1">数值1</option>
+            <option value="数值2">数值2</option>
+            <option value="数值3">数值3</option>
+            <option selected value="行总计">行总计</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u7613" class="ax_default icon">
+          <img id="u7613_img" class="img " src="images/图表数据计算/u7613.png"/>
+          <!-- Unnamed () -->
+          <div id="u7614" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u7615" class="ax_default icon">
+          <img id="u7615_img" class="img " src="images/图表数据计算/u7615.png"/>
+          <!-- Unnamed () -->
+          <div id="u7616" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7617" class="ax_default droplist">
+          <select id="u7617_input">
+            <option value="数值1">数值1</option>
+            <option value="数值2">数值2</option>
+            <option value="数值3">数值3</option>
+            <option selected value=" ">&nbsp;</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7618" class="ax_default droplist">
+          <select id="u7618_input">
+            <option value="+ 加">+ 加</option>
+            <option value="- 减">- 减</option>
+            <option value="* 乘">* 乘</option>
+            <option value="/ 除">/ 除</option>
+            <option selected value=" ">&nbsp;</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (下拉列表框) -->
+        <div id="u7619" class="ax_default droplist">
+          <select id="u7619_input">
+            <option value="数值1">数值1</option>
+            <option value="数值2">数值2</option>
+            <option value="数值3">数值3</option>
+            <option value="行总计">行总计</option>
+            <option selected value=" ">&nbsp;</option>
+          </select>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u7620" class="ax_default icon">
+          <img id="u7620_img" class="img " src="images/图表数据计算/u7613.png"/>
+          <!-- Unnamed () -->
+          <div id="u7621" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u7622" class="ax_default icon">
+          <img id="u7622_img" class="img " src="images/图表数据计算/u7615.png"/>
+          <!-- Unnamed () -->
+          <div id="u7623" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u7624" class="ax_default connector">
+        <img id="u7624_seg0" class="img " src="images/图表数据计算/u7624_seg0.png" alt="u7624_seg0"/>
+        <img id="u7624_seg1" class="img " src="images/图表数据计算/u7624_seg1.png" alt="u7624_seg1"/>
+        <img id="u7624_seg2" class="img " src="images/图表数据计算/u7624_seg2.png" alt="u7624_seg2"/>
+        <img id="u7624_seg3" class="img " src="images/图表数据计算/u7624_seg3.png" alt="u7624_seg3"/>
+        <img id="u7624_seg4" class="img " src="images/图表数据计算/u7624_seg4.png" alt="u7624_seg4"/>
+        <!-- Unnamed () -->
+        <div id="u7625" class="text" style="visibility: visible;">
+          <p><span>删除</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7626" class="ax_default box_2">
+        <div id="u7626_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7627" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7628" class="ax_default link_button">
+        <div id="u7628_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7629" class="text" style="visibility: visible;">
+          <p><span>表格计算</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u7630" class="ax_default line">
+        <img id="u7630_img" class="img " src="images/图表数据计算/u7630.png"/>
+        <!-- Unnamed () -->
+        <div id="u7631" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u7632" class="ax_default icon">
+        <img id="u7632_img" class="img " src="images/图表数据计算/u7632.png"/>
+        <!-- Unnamed () -->
+        <div id="u7633" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u7634" class="ax_default">
+
+        <!-- Unnamed (图片) -->
+        <div id="u7635" class="ax_default image">
+          <img id="u7635_img" class="img " src="images/图表数据计算/u7569.png"/>
+          <!-- Unnamed () -->
+          <div id="u7636" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u7637" class="ax_default image">
+          <img id="u7637_img" class="img " src="images/图表数据计算/u7571.png"/>
+          <!-- Unnamed () -->
+          <div id="u7638" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7639" class="ax_default box_2">
+        <div id="u7639_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7640" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7641" class="ax_default link_button">
+        <div id="u7641_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7642" class="text" style="visibility: visible;">
+          <p><span>表格计算</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u7643" class="ax_default line">
+        <img id="u7643_img" class="img " src="images/图表数据计算/u7630.png"/>
+        <!-- Unnamed () -->
+        <div id="u7644" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u7645" class="ax_default icon">
+        <img id="u7645_img" class="img " src="images/图表数据计算/u7632.png"/>
+        <!-- Unnamed () -->
+        <div id="u7646" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7647" class="ax_default paragraph">
+        <img id="u7647_img" class="img " src="images/图表数据计算/u7647.png"/>
+        <!-- Unnamed () -->
+        <div id="u7648" class="text" style="visibility: visible;">
+          <p><span>数值1 / 行总计</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7649" class="ax_default paragraph">
+        <img id="u7649_img" class="img " src="images/图表数据计算/u7649.png"/>
+        <!-- Unnamed () -->
+        <div id="u7650" class="text" style="visibility: visible;">
+          <p><span>M</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (表格) -->
+      <div id="u7651" class="ax_default">
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7652" class="ax_default">
+          <img id="u7652_img" class="img " src="images/图表数据计算/u7652.png"/>
+          <!-- Unnamed () -->
+          <div id="u7653" class="text" style="visibility: visible;">
+            <p><span>需求类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7654" class="ax_default">
+          <img id="u7654_img" class="img " src="images/图表数据计算/u7654.png"/>
+          <!-- Unnamed () -->
+          <div id="u7655" class="text" style="visibility: visible;">
+            <p><span>功能需求</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7656" class="ax_default">
+          <img id="u7656_img" class="img " src="images/图表数据计算/u7652.png"/>
+          <!-- Unnamed () -->
+          <div id="u7657" class="text" style="visibility: visible;">
+            <p><span>场景</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7658" class="ax_default">
+          <img id="u7658_img" class="img " src="images/图表数据计算/u7654.png"/>
+          <!-- Unnamed () -->
+          <div id="u7659" class="text" style="visibility: visible;">
+            <p><span>用户使用表格类型图表，需要查看某段范围内汇总数据</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7660" class="ax_default">
+          <img id="u7660_img" class="img " src="images/图表数据计算/u7660.png"/>
+          <!-- Unnamed () -->
+          <div id="u7661" class="text" style="visibility: visible;">
+            <p><span>需求描述</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7662" class="ax_default">
+          <img id="u7662_img" class="img " src="images/图表数据计算/u7662.png"/>
+          <!-- Unnamed () -->
+          <div id="u7663" class="text" style="visibility: visible;">
+            <p><span>1、在使用表格时，用户选择显示行/列总计时，系统自动计算显示表格内的汇总/平均数据，用户根据喜好，可以调整显示位置；</span></p><p><span>2、使用列总计的时候，判断现有表格数据具有多少个列，并将这些列的表头名称，显示为可以更换计算方式的选项，如下图所示</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7664" class="ax_default">
+          <img id="u7664_img" class="img " src="images/图表数据计算/u7664.png"/>
+          <!-- Unnamed () -->
+          <div id="u7665" class="text" style="visibility: visible;">
+            <p><span>备注说明</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u7666" class="ax_default">
+          <img id="u7666_img" class="img " src="images/图表数据计算/u7666.png"/>
+          <!-- Unnamed () -->
+          <div id="u7667" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u7668" class="ax_default">
+
+        <!-- Unnamed (组合) -->
+        <div id="u7669" class="ax_default">
+
+          <!-- Unnamed (图片) -->
+          <div id="u7670" class="ax_default image">
+            <img id="u7670_img" class="img " src="images/图表数据计算/u7670.png"/>
+            <!-- Unnamed () -->
+            <div id="u7671" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7672" class="ax_default image">
+            <img id="u7672_img" class="img " src="images/图表数据计算/u7672.png"/>
+            <!-- Unnamed () -->
+            <div id="u7673" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7674" class="ax_default image">
+            <img id="u7674_img" class="img " src="images/图表数据计算/u7674.png"/>
+            <!-- Unnamed () -->
+            <div id="u7675" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7676" class="ax_default image">
+            <img id="u7676_img" class="img " src="images/图表数据计算/u7676.png"/>
+            <!-- Unnamed () -->
+            <div id="u7677" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7678" class="ax_default box_2">
+            <div id="u7678_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7679" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (复选框) -->
+          <div id="u7680" class="ax_default checkbox">
+            <label for="u7680_input">
+              <!-- Unnamed () -->
+              <div id="u7681" class="text" style="visibility: visible;">
+                <p><span>显示行总计</span></p>
+              </div>
+            </label>
+            <input id="u7680_input" type="checkbox" value="checkbox"/>
+          </div>
+
+          <!-- Unnamed (复选框) -->
+          <div id="u7682" class="ax_default checkbox">
+            <label for="u7682_input">
+              <!-- Unnamed () -->
+              <div id="u7683" class="text" style="visibility: visible;">
+                <p><span>显示列总计</span></p>
+              </div>
+            </label>
+            <input id="u7682_input" type="checkbox" value="checkbox"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7684" class="ax_default label">
+            <div id="u7684_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7685" class="text" style="visibility: visible;">
+              <p><span>显示总计</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7686" class="ax_default image">
+            <img id="u7686_img" class="img " src="images/图表数据计算/u7674.png"/>
+            <!-- Unnamed () -->
+            <div id="u7687" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7688" class="ax_default box_2">
+            <div id="u7688_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7689" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (复选框) -->
+          <div id="u7690" class="ax_default checkbox">
+            <label for="u7690_input">
+              <!-- Unnamed () -->
+              <div id="u7691" class="text" style="visibility: visible;">
+                <p><span>显示行总计</span></p>
+              </div>
+            </label>
+            <input id="u7690_input" type="checkbox" value="checkbox" checked/>
+          </div>
+
+          <!-- Unnamed (复选框) -->
+          <div id="u7692" class="ax_default checkbox">
+            <label for="u7692_input">
+              <!-- Unnamed () -->
+              <div id="u7693" class="text" style="visibility: visible;">
+                <p><span>显示列总计</span></p>
+              </div>
+            </label>
+            <input id="u7692_input" type="checkbox" value="checkbox" checked/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7694" class="ax_default label">
+            <div id="u7694_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7695" class="text" style="visibility: visible;">
+              <p><span>显示总计</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7696" class="ax_default label">
+            <div id="u7696_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7697" class="text" style="visibility: visible;">
+              <p><span>计算方式</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (下拉列表框) -->
+          <div id="u7698" class="ax_default droplist">
+            <select id="u7698_input">
+              <option value="行总计">行总计</option>
+              <option value="行平均">行平均</option>
+            </select>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7699" class="ax_default label">
+            <div id="u7699_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7700" class="text" style="visibility: visible;">
+              <p><span>显示位置</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (下拉列表框) -->
+          <div id="u7701" class="ax_default droplist">
+            <select id="u7701_input">
+              <option value="表格左侧">表格左侧</option>
+              <option value="表格右侧">表格右侧</option>
+            </select>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7702" class="ax_default label">
+            <div id="u7702_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7703" class="text" style="visibility: visible;">
+              <p><span>列1名称</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (下拉列表框) -->
+          <div id="u7704" class="ax_default droplist">
+            <select id="u7704_input">
+              <option value="列总计">列总计</option>
+              <option value="列平均">列平均</option>
+            </select>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7705" class="ax_default label">
+            <div id="u7705_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7706" class="text" style="visibility: visible;">
+              <p><span>显示位置</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (下拉列表框) -->
+          <div id="u7707" class="ax_default droplist">
+            <select id="u7707_input">
+              <option selected value="表格顶部">表格顶部</option>
+              <option value="表格底部">表格底部</option>
+            </select>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u7708" class="ax_default label">
+            <div id="u7708_div" class=""></div>
+            <!-- Unnamed () -->
+            <div id="u7709" class="text" style="visibility: visible;">
+              <p><span>列2名称</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (下拉列表框) -->
+          <div id="u7710" class="ax_default droplist">
+            <select id="u7710_input">
+              <option value="列总计">列总计</option>
+              <option value="列平均">列平均</option>
+            </select>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u7711" class="ax_default image">
+            <img id="u7711_img" class="img " src="images/图表数据计算/u7670.png"/>
+            <!-- Unnamed () -->
+            <div id="u7712" class="text" style="display: none; visibility: hidden">
+              <p><span></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u7713" class="ax_default box_1">
+          <div id="u7713_div" class=""></div>
+          <!-- Unnamed () -->
+          <div id="u7714" class="text" style="display: none; visibility: hidden">
+            <p><span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7715" class="ax_default label">
+        <div id="u7715_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7716" class="text" style="visibility: visible;">
+          <p><span>2、表格汇总/平均功能</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u7717" class="ax_default label">
+        <div id="u7717_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u7718" class="text" style="visibility: visible;">
+          <p><span>3、普通与高级计算</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7719" class="ax_default image">
+        <img id="u7719_img" class="img " src="images/图表数据计算/u7719.png"/>
+        <!-- Unnamed () -->
+        <div id="u7720" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7721" class="ax_default image">
+        <img id="u7721_img" class="img " src="images/图表数据计算/u7721.png"/>
+        <!-- Unnamed () -->
+        <div id="u7722" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7723" class="ax_default paragraph">
+        <img id="u7723_img" class="img " src="images/图表数据计算/u7723.png"/>
+        <!-- Unnamed () -->
+        <div id="u7724" class="text" style="visibility: visible;">
+          <p style="font-size:16px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;">4、图内数据筛选器</span></p><p style="font-size:16px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;"><br></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">主要是帮助用户在数据分析过程中，排除不正确或不相关的数据干扰。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">用户可以将需要筛选的字段，拖拽到维度，数值下方的筛选框内，设置相应的筛选条件。不同的字段类型对应不同的筛选器类型。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">if 是 文本字段</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">当字段为文本类型时，数据配方选用两种筛选方式，一种是常规的，勾选几种类型，进行筛选符合该条件（或者排除该条件）的数据。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7725" class="ax_default paragraph">
+        <img id="u7725_img" class="img " src="images/图表数据计算/u7725.png"/>
+        <!-- Unnamed () -->
+        <div id="u7726" class="text" style="visibility: visible;">
+          <p><span>另一种是采用通配符的形式，设置一个根据文本判断的条件，筛选结果为符合所有条件（或者排除所选条件）的数据。</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7727" class="ax_default image">
+        <img id="u7727_img" class="img " src="images/图表数据计算/u7727.png"/>
+        <!-- Unnamed () -->
+        <div id="u7728" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7729" class="ax_default image">
+        <img id="u7729_img" class="img " src="images/图表数据计算/u7729.png"/>
+        <!-- Unnamed () -->
+        <div id="u7730" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7731" class="ax_default paragraph">
+        <img id="u7731_img" class="img " src="images/图表数据计算/u7731.png"/>
+        <!-- Unnamed () -->
+        <div id="u7732" class="text" style="visibility: visible;">
+          <p><span>else if 是 时间字段</span></p><p><span><br></span></p><p><span>当字段为日期型时，默认会提供一个可选日期范围的列表，包括“今天”、“昨天”、“最近7天”、“最近30天”、“最近1年”等常用的动态时间范围或自定义的时间段。通过选择动态日期范围，DataCF将根据使用的当前时间进行动态的筛选，保证数据结果符合数据筛选需求。</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7733" class="ax_default paragraph">
+        <img id="u7733_img" class="img " src="images/图表数据计算/u7733.png"/>
+        <!-- Unnamed () -->
+        <div id="u7734" class="text" style="visibility: visible;">
+          <p><span><br></span></p><p><span><br></span></p><p><span>else if 是 数值字段，可以使用条件筛选直接设置一个开区间或者闭区间。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7735" class="ax_default image">
+        <img id="u7735_img" class="img " src="images/图表数据计算/u7735.png"/>
+        <!-- Unnamed () -->
+        <div id="u7736" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7737" class="ax_default paragraph">
+        <img id="u7737_img" class="img " src="images/图表数据计算/u7737.png"/>
+        <!-- Unnamed () -->
+        <div id="u7738" class="text" style="visibility: visible;">
+          <p><span><br></span></p><p><span>如果筛选条件不是默认的动态时间，可以使用自定义时间段进行筛选。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7739" class="ax_default image">
+        <img id="u7739_img" class="img " src="images/图表数据计算/u7739.png"/>
+        <!-- Unnamed () -->
+        <div id="u7740" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u7741" class="ax_default image">
+        <img id="u7741_img" class="img " src="images/图表数据计算/u7741.png"/>
+        <!-- Unnamed () -->
+        <div id="u7742" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本段落) -->
+      <div id="u7743" class="ax_default paragraph">
+        <img id="u7743_img" class="img " src="images/图表数据计算/u7743.png"/>
+        <!-- Unnamed () -->
+        <div id="u7744" class="text" style="visibility: visible;">
+          <p style="font-size:16px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;">普通数据聚合</span><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;font-size:13px;"></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">求和：对字段值进行sum求和</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">平均值：对字段值进行avg求平均值</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">计数：对字段值进行count</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">去重计数：对字段值进行distinct count</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">最大值：找出字段值的max值</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">最小值：找出字段值的min值</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p><p style="font-size:16px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;color:#1E1E1E;">高级计算</span><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;font-size:13px;"></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;">环比增长值/率（目前只支持维度为日期的计算条件）</span><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">环比：环比一般情况下是今年第n月与今年第n-1月比。环比是本期统计数据与上期统计数据比较，用以说明本统计周期数据与前一统计周期数据相比的变化量。例如，本期2月比今年1月，本期6月比今年5月等。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">环比计算方法：（统计周期，按选择的时间维度）</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">环比增长值= 本统计周期数据 - 上统计周期数据</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">环比增长率=（本统计周期数据-上统计周期数据）/上统计周期数据 × 100%。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;">同比增长值/率（目前只支持维度为日期的计算条件）</span><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">同比：同比一般情况下是今年/月/周/第n月与去年/第n月比。使用同比主要是为了消除季节变动的影响，用以说明本统计周期数据与去年同期数据相比的变化量。例如：本期2月比去年2月，本期6月比去年6月等。</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">同比计算方法：（统计周期，按选择的时间维度）</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">同比增长值= 本统计周期数据 - 去年/月/周同期数据</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">同比增长率=（本统计周期数据 - 去年/月/周同期数据）/去年/月/周同期数据 × 100%</span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"><br></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei-Bold', 'Microsoft YaHei Negreta', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:700;">百分比</span><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;"></span></p><p style="font-size:13px;"><span style="font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';font-weight:400;">百分比计算可以快速计算出一列数据中各自所占的百分比数，在数值下拉列表中高级计算-&gt;百分比即可。</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
