@@ -12,21 +12,21 @@
   position:absolute;
   z-index:0;
 }
-#u6755_img {
+#u6753_img {
   position:absolute;
   left:0px;
   top:0px;
   width:1137px;
   height:638px;
 }
-#u6755 {
+#u6753 {
   position:absolute;
   left:0px;
   top:17px;
   width:1137px;
   height:638px;
 }
-#u6756 {
+#u6754 {
   position:absolute;
   left:2px;
   top:311px;
@@ -34,21 +34,21 @@
   visibility:hidden;
   word-wrap:break-word;
 }
-#u6757_img {
+#u6755_img {
   position:absolute;
   left:0px;
   top:0px;
   width:893px;
   height:146px;
 }
-#u6757 {
+#u6755 {
   position:absolute;
   left:20px;
   top:733px;
   width:893px;
   height:146px;
 }
-#u6758 {
+#u6756 {
   position:absolute;
   left:2px;
   top:65px;
@@ -56,12 +56,48 @@
   visibility:hidden;
   word-wrap:break-word;
 }
-#u6759_div {
+#u6757_div {
   position:absolute;
   left:0px;
   top:0px;
   width:279px;
   height:38px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';
+  font-weight:400;
+  font-style:normal;
+  color:#FF0000;
+}
+#u6757 {
+  position:absolute;
+  left:726px;
+  top:178px;
+  width:279px;
+  height:38px;
+  font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';
+  font-weight:400;
+  font-style:normal;
+  color:#FF0000;
+}
+#u6758 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:279px;
+  word-wrap:break-word;
+}
+#u6759_div {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:381px;
+  height:19px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -76,42 +112,6 @@
 }
 #u6759 {
   position:absolute;
-  left:726px;
-  top:178px;
-  width:279px;
-  height:38px;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';
-  font-weight:400;
-  font-style:normal;
-  color:#FF0000;
-}
-#u6760 {
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:279px;
-  word-wrap:break-word;
-}
-#u6761_div {
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:381px;
-  height:19px;
-  background:inherit;
-  background-color:rgba(255, 255, 255, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-  font-family:'MicrosoftYaHei', 'Microsoft YaHei Normal', 'Microsoft YaHei';
-  font-weight:400;
-  font-style:normal;
-  color:#FF0000;
-}
-#u6761 {
-  position:absolute;
   left:20px;
   top:685px;
   width:381px;
@@ -121,7 +121,7 @@
   font-style:normal;
   color:#FF0000;
 }
-#u6762 {
+#u6760 {
   position:absolute;
   left:0px;
   top:0px;
