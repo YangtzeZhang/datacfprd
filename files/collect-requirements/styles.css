@@ -1,0 +1,98 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:relative;
+  left:-2px;
+  width:1376px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u395 {
+  position:absolute;
+  left:2px;
+  top:52px;
+  width:1372px;
+  height:776px;
+}
+#u395_input {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1372px;
+  height:776px;
+}
+#u396_div {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:266px;
+  height:21px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'.AppleSystemUIFontEmphasized', '.AppleSystemUIFont Bold', '.AppleSystemUIFont';
+  font-weight:700;
+  font-style:normal;
+  font-size:20px;
+  color:#000000;
+}
+#u396 {
+  position:absolute;
+  left:3px;
+  top:15px;
+  width:266px;
+  height:21px;
+  font-family:'.AppleSystemUIFontEmphasized', '.AppleSystemUIFont Bold', '.AppleSystemUIFont';
+  font-weight:700;
+  font-style:normal;
+  font-size:20px;
+  color:#000000;
+}
+#u397 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:266px;
+  white-space:nowrap;
+}
+#u398_div {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:97px;
+  height:17px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-size:12px;
+  color:#666666;
+}
+#u398 {
+  position:absolute;
+  left:279px;
+  top:19px;
+  width:97px;
+  height:17px;
+  font-size:12px;
+  color:#666666;
+}
+#u399 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:97px;
+  white-space:nowrap;
+}
