@@ -3,7 +3,7 @@
   background-image:none;
   position:relative;
   left:-2px;
-  width:1376px;
+  width:1436px;
   margin-left:auto;
   margin-right:auto;
   text-align:left;
@@ -15,18 +15,47 @@
 #u395 {
   position:absolute;
   left:2px;
-  top:52px;
-  width:1372px;
-  height:776px;
+  top:-16px;
+  width:1432px;
+  height:852px;
 }
 #u395_input {
   position:absolute;
   left:0px;
   top:0px;
-  width:1372px;
-  height:776px;
+  width:1432px;
+  height:852px;
 }
 #u396_div {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:1434px;
+  height:50px;
+  background:inherit;
+  background-color:rgba(240, 240, 240, 1);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u396 {
+  position:absolute;
+  left:4px;
+  top:0px;
+  width:1434px;
+  height:50px;
+}
+#u397 {
+  position:absolute;
+  left:2px;
+  top:17px;
+  width:1430px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
+#u398_div {
   position:absolute;
   left:0px;
   top:0px;
@@ -45,10 +74,10 @@
   font-size:20px;
   color:#000000;
 }
-#u396 {
+#u398 {
   position:absolute;
-  left:3px;
-  top:15px;
+  left:24px;
+  top:10px;
   width:266px;
   height:21px;
   font-family:'.AppleSystemUIFontEmphasized', '.AppleSystemUIFont Bold', '.AppleSystemUIFont';
@@ -57,14 +86,14 @@
   font-size:20px;
   color:#000000;
 }
-#u397 {
+#u399 {
   position:absolute;
   left:0px;
   top:0px;
   width:266px;
   white-space:nowrap;
 }
-#u398_div {
+#u400_div {
   position:absolute;
   left:0px;
   top:0px;
@@ -80,16 +109,16 @@
   font-size:12px;
   color:#666666;
 }
-#u398 {
+#u400 {
   position:absolute;
-  left:279px;
-  top:19px;
+  left:300px;
+  top:14px;
   width:97px;
   height:17px;
   font-size:12px;
   color:#666666;
 }
-#u399 {
+#u401 {
   position:absolute;
   left:0px;
   top:0px;
